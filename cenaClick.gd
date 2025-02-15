@@ -16,7 +16,6 @@ func _input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			print("aaaa", event.position)
 			_PositionMouse2 = event.position;
-			queue_redraw();
 			if !_dragging and event.pressed:
 				_dragging = true;
 			if _dragging and !event.pressed:
@@ -27,9 +26,6 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and _dragging:
 		_PositionMouse1 = event.position;
 		queue_redraw();
-
-			
-			
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

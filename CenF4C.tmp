@@ -8,4 +8,3 @@ script = ExtResource("1_2tiy7")
 
 [node name="Player" parent="." instance=ExtResource("1_1r08f")]
 position = Vector2(150, 14)
-speed = 400
