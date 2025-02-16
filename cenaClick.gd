@@ -8,7 +8,6 @@ var _PositionMouse2 : Vector2;
 	set(value):
 		texture = value
 		queue_redraw()
-		
 func _draw() -> void:
 	draw_rect(Rect2(_PositionMouse2[0],_PositionMouse2[1], _PositionMouse1[0] - _PositionMouse2[0],_PositionMouse1[1] - _PositionMouse2[1]), Color.GREEN, false);
 func _input(event: InputEvent) -> void:
@@ -26,12 +25,9 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and _dragging:
 		_PositionMouse1 = event.position;
 		queue_redraw();
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

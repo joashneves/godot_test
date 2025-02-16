@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsvvklrgacid7"]
+
+[ext_resource type="Texture2D" uid="uid://bis0uimxyoc7b" path="res://img/Sprite_0003.png" id="1_jfapf"]
+[ext_resource type="Script" path="res://player/gun.gd" id="1_sdgi1"]
+
+[node name="gun" type="Node2D"]
+script = ExtResource("1_sdgi1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(11, -7)
+texture = ExtResource("1_jfapf")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(28, -11)
+gizmo_extents = 15.0
